@@ -68,8 +68,7 @@ class Trip {
   }
 
   passenger() {
-    
+
   }
 
 }
-
