@@ -60,15 +60,16 @@ class Trip {
   }
 
   driver() {
+    return store.drivers.find(
+      function(driver) {
+        return driver.id === this.driverId;
+      }
+    );
+  }
 
+  passenger() {
+    
   }
 
 }
 
-/*
-A driver has many trips, and has many passengers through trips.
-A passenger has many trips, and has many drivers through trips.
-A trip belongs to a driver and belongs to a passenger.
-driver() - returns the driver associated with the trip
-passenger() - returns the passenger associated with the trip
-*/
